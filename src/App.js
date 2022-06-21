@@ -29,7 +29,7 @@ function App() {
       </div>
       <div className="subHeading">
         <br />
-        <h2>Let's sort your work! 🌝 ☕ </h2>
+        <h2>Let's feed your works:) </h2>
       </div>
 
 
@@ -40,7 +40,7 @@ function App() {
           placeholder="🖊️ Add item..." />
         <button style={{border:"none", backgroundColor:"white"}} type="submit">
 
-          <i onClick={() => setToDos([...toDos, { id: Date.now(), text: toDo, status: false }])} className="fas fa-plus"></i>
+          <i onClick={() =>{if(toDo!==""){ setToDos([...toDos, { id: Date.now(), text: toDo, status: false }])}}} className="fas fa-plus"></i>
 
         </button>
 
